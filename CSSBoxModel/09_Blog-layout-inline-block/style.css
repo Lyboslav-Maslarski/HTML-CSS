@@ -8,7 +8,7 @@ body {
 article {
     display: inline-block;
     width: 65%;
-    vertical-align:top;
+    vertical-align: top;
 }
 
 aside {
@@ -16,6 +16,10 @@ aside {
     width: 25%;
 }
 
-img{
+li {
+    list-style-position: inside;
+}
+
+img {
     max-width: 600px;
 }
