@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+}
+
+div {
+    max-width: 65vw;
+    display: flex;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.week {
+    flex: 3 1 0;
+}
+
+span {
+    border: 1px solid black;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    flex: 1 1 0;
+}
+
+span:nth-child(1),
+span:nth-child(7) {
+    flex-basis: 100%;
+}
+
+.notes {
+    flex-direction: column;
+}
+
+.notes span {
+    flex: 1 1 0;
+}
