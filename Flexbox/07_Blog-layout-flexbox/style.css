@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(238, 238, 238);
+    box-sizing: border-box;
+    padding: 40px 100px;
+}
+
+header {
+    text-transform: uppercase;
+    border-bottom: 2px solid black;
+    flex-basis: 100%;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+}
+
+img {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-style: italic;
+    padding-left: 30px;
+}
+
+a {
+    color: rgb(0, 153, 0);
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.half-size {
+    max-width: 50%;
+    margin: 0;
+}
+
+p.half-size {
+    border-right: 2px solid grey;
+}
+
+blockquote p:nth-child(1) {
+    margin: 0;
+    padding: 0 30px;
+}
+
+blockquote p:nth-child(2) {
+    text-align: right;
+}
+
+main {
+    flex: 4 1 0;
+}
+
+aside {
+    flex: 1 1 0;
+    display: block;
+    padding-left: 50px;
+}
