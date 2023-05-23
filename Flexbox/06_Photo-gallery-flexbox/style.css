@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    box-sizing: border-box;
+    background-color: rgb(230, 230, 230);
+    padding: 80px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60vw;
+    gap: 40px;
+}
+
+li {
+    display: flex;
+    border: 10px solid black;
+    background-color: white;
+    align-items: center;
+}
+
+img{
+    padding: 35px 15px;
+}
