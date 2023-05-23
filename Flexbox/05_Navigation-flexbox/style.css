@@ -1,0 +1,30 @@
+body {
+    padding: 60px;
+    width: 65vw;
+}
+
+header {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: flex;
+}
+
+header h1 {
+    margin-right: auto;
+    text-transform: uppercase;
+}
+
+main h1 {
+    font-weight: lighter;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px;
+}
