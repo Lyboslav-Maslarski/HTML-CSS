@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+img {
+    float: right;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    padding: 10px;
+    margin: 0px 0px 20px 20px;
+}
+
+.second-img {
+    float: left;
+    margin: 0px 20px 20px 0px;
+}
+
+div {
+    position: relative;
+}
+
+blockquote {
+    position: absolute;
+    display: inline-block;
+    height: 150px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #6f6f6f;
+    width: 45%;
+    height: 80%;
+    right: 0;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.next-to-blockquote {
+    display: inline-block;
+    width: 48%;
+    border-right: 3px solid #c1c1c1;
+    padding-right: 20px;
+}
+
+blockquote p {
+    padding-left: 30px;
+}
+
+blockquote p:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    font-size: 1em/1.2;
+}
+
+header nav {
+    FONT-WEIGHT: 100;
+    position: absolute;
+    list-style: none;
+    display: inline-block;
+    top: 0;
+    right: 0;
+}
+
+header li {
+    display: inline-block;
+    margin: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+aside a {
+    text-decoration: none;
+    color: rgb(0, 184, 0);
+}
+
+header {
+    position: relative;
+}
+
+header p {
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main {
+    width: 60%;
+    float: left;
+    line-height: 1.2;
+}
+
+aside {
+    font-weight: bold;
+    width: 24%;
+    float: right;
+}
+
+hr {
+    height: 1px;
+    background-color: black;
+}
