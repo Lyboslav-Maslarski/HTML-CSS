@@ -1,0 +1,46 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    border-radius: 4px;
+    margin: 5%;
+}
+
+img {
+    width: 100%;
+}
+
+div+div {
+    position: relative;
+}
+
+button {
+    background-color: rgb(0, 153, 0);
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    padding: 3% 5%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5%;
+}
+
+h1 {
+    font: 1em/1.2 Georgia, serif;
+    font-weight: bold;
+}
+
+.desc {
+    padding: 0% 10% 10% 10%;
+}
