@@ -1,18 +1,12 @@
 body {
     background-color: rgb(238, 238, 238);
     box-sizing: border-box;
-    padding: 40px 100px;
+    margin: 40px 100px;
 }
 
 header {
     text-transform: uppercase;
     border-bottom: 2px solid black;
-    flex-basis: 100%;
-}
-
-.page {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 h1,
@@ -28,9 +22,10 @@ img {
 }
 
 blockquote {
+    display: inline-block;
     font-family: Georgia, serif;
     font-style: italic;
-    padding-left: 30px;
+    border-left: 2px solid grey;
 }
 
 a {
@@ -46,12 +41,9 @@ a {
 }
 
 .half-size {
-    max-width: 50%;
+    display: inline-block;
+    width: 46%;
     margin: 0;
-}
-
-p.half-size {
-    border-right: 2px solid grey;
 }
 
 blockquote p:nth-child(1) {
@@ -63,12 +55,64 @@ blockquote p:nth-child(2) {
     text-align: right;
 }
 
-main {
-    flex: 4 1 0;
+@media (max-width:499px) {
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        margin: 0;
+        padding: 20px 50px;
+        align-items: center;
+    }
+
+    .half-size {
+        width: 100%;
+
+    }
+
+    .float-right {
+        float: none;
+        margin-left: 0px;
+    }
+
+    .float-left {
+        margin-left: 0px;
+    }
+
+    blockquote.float-right {
+        display: block;
+        margin: 20px;
+        width: 80%;
+    }
 }
 
-aside {
-    flex: 1 1 0;
-    display: block;
-    padding-left: 50px;
+@media (min-width:500px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:600px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:800px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:1300px) {
+    body {
+        font-size: 21px;
+    }
+}
+
+@media (min-width:1800px) {
+    body {
+        font-size: 23px;
+    }
 }
