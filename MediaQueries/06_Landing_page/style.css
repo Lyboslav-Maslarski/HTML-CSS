@@ -1,0 +1,286 @@
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0deg 0% 98.04%);
+    line-height: 1.25;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+hr {
+    width: 5%;
+    height: 3px;
+    background-color: #000;
+    align-self: center;
+    border: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header .phone-menu {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul a {
+    margin: 12px;
+}
+
+header .title {
+    margin-right: auto;
+}
+
+h1 {
+    color: hsl(299.53deg 100% 24.9%);
+}
+
+header .subtitle {
+    text-transform: uppercase;
+    width: 100%;
+}
+
+header {
+    margin-bottom: 10%;
+    padding: 0 10%;
+}
+
+.need {
+    width: 80%;
+    display: flex;
+    margin-left: 16%;
+    margin-bottom: 10%;
+    max-width: 60%;
+}
+
+.need i {
+    float: right;
+    font-size: 20vh;
+}
+
+.need h2 {
+    margin-bottom: 4%;
+}
+
+.need p {
+    margin-bottom: 4%;
+    margin-right: 8%;
+}
+
+.need button {
+    background-color: hsl(0deg 0% 98.04%);
+    padding: 1% 2%;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.team hr {
+    margin: 2%;
+}
+
+.team h2 {
+    flex-basis: 100%;
+    display: block;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 16%;
+}
+
+.card {
+    width: 22%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+img {
+    width: 30%;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-bottom: 10%;
+}
+
+.card h3 {
+    margin-bottom: 2%;
+}
+
+.card span {
+    margin-bottom: 10%;
+}
+
+.newsletter {
+    background-color: hsl(283.71deg 40.23% 34.12%);
+    text-align: center;
+    color: hsl(0deg 0% 98.04%);
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+.newsletter hr {
+    margin: 1%;
+}
+
+.newsletter .inputs {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.newsletter input {
+    background-color: hsl(0deg 0% 98.04%);
+    border-radius: 2px;
+    border: 0.5px solid;
+    display: inline-block;
+}
+
+.newsletter input[type="button"] {
+    padding: 0 2%;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.testimonials h2 {
+    padding: 2% 0 1% 0;
+}
+
+.testimonials hr {
+    margin-bottom: 2%;
+}
+
+.testimonials p {
+    padding-bottom: 10%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10%;
+    border-top: 2px solid grey;
+}
+
+footer .sitemap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+footer .sitemap ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 60%;
+}
+
+footer .sitemap ul li {
+    width: 100%;
+}
+
+footer .sitemap h3 {
+    flex-basis: 100%;
+}
+
+footer .footer-title {
+    width: 20%;
+}
+
+footer .footer-title h2 {
+    padding-bottom: 4%;
+}
+
+footer i {
+    margin-right: 2%;
+}
+
+footer .contacts {
+    width: 30%;
+}
+
+footer .contacts li {
+    display: flex;
+}
+
+footer .contacts div {
+    display: inline-block;
+}
+
+@media (max-width:600px) {
+
+    header nav {
+        display: none;
+    }
+
+    header .phone-menu {
+        display: flex;
+        gap: 5%;
+    }
+
+    .card {
+        width: 40%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer .footer-title {
+        width: 100%;
+    }
+
+    footer .sitemap {
+        width: 100%;
+    }
+
+    footer .sitemap ul {
+        flex-wrap: wrap;
+        height: 80px;
+    }
+
+    footer .contacts {
+        width: 100%;
+    }
+}
