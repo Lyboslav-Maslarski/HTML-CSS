@@ -1,1 +1,69 @@
 /* TODO: Add responsive styles here... */
+@media (max-width:600px) {
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    #home .container-fluid img {
+        display: none;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    .col-sm-6 {
+        text-align: left;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-12 {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        margin-top: 100px;
+    }
+
+    .hero-btns {
+        margin-bottom: 50px;
+    }
+
+    .hero-btns a {
+        display: block;
+    }
+
+    #contact-us .contact-btn {
+        display: none;
+    }
+
+    .about .container .row .col-12 {
+        margin-bottom: 100px;
+    }
+
+    .about {
+        margin-bottom: 100px;
+    }
+
+    footer h3 {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    footer .row ul {
+        width: 30%;
+        margin: auto;
+    }
+
+    a {
+        width: 80%;
+        margin: auto;
+    }
+}

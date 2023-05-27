@@ -221,7 +221,7 @@ p {
   margin-bottom: 350px;
 }
 
-.navbar-light .navbar-nav .active > .nav-link {
+.navbar-light .navbar-nav .active>.nav-link {
   color: #ff3946;
 }
 
