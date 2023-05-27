@@ -1,0 +1,205 @@
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+@import url(https://fonts.google.com/specimen/Raleway);
+
+:root {
+    --light-grey: rgb(239 239 239);
+    --dark-grey: rgb(144 144 144);
+    --black: rgb(17 17 17);
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+}
+
+section {
+    background-color: var(--light-grey);
+    height: 60vh;
+    margin: 2rem;
+    padding: 10rem;
+}
+
+.img-text {
+    position: relative;
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero .menu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.2rem;
+}
+
+#hero .menu span {
+    margin-right: 12px;
+}
+
+.desc {
+    width: 45%;
+    flex: 0 0 45%;
+}
+
+.img-text img {
+    width: 45%;
+    flex: 1 1 45%;
+}
+
+#hero img {
+    position: absolute;
+    right: 6rem;
+    bottom: 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
+p {
+    font-style: italic;
+    line-height: 1.8;
+    font-size: 1.25rem;
+    color: var(--dark-grey);
+    margin-bottom: 3rem;
+}
+
+.divider-vertical {
+    border-left: 2px solid black;
+    height: 5rem;
+}
+
+.divider-horisontal {
+    border-top: 2px solid black;
+    width: 5rem;
+    display: inline-block;
+    margin-right: 1.4rem;
+    position: absolute;
+    top: 11.5rem;
+    right: 46.5rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#camera i {
+    width: 2.5rem;
+    height: 2rem;
+    background-color: var(--dark-grey);
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+#camera h1 {
+    padding: 0 6rem;
+}
+
+#picture {
+    padding: 0;
+    overflow: hidden;
+    height: 90vh;
+}
+
+#picture img {
+    width: 100%;
+    height: 100%;
+}
+
+#gallery {
+    display: flex;
+    align-items: center;
+}
+
+#gallery ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#gallery li:nth-child(2) {
+    transform: scale(1.5);
+}
+
+#contact {
+    text-align: center;
+    position: relative;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: 1px solid var(--black);
+}
+
+form {
+    width: 40%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "email subject"
+        "msg msg"
+        "btn btn";
+    gap: 2rem;
+}
+
+input {
+    height: 2rem;
+}
+
+input::placeholder {
+    padding-left: 0.5rem;
+    color: #151515;
+}
+
+textarea::placeholder {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #151515;
+}
+
+input.email {
+    grid-area: email;
+}
+
+input.subject {
+    grid-area: subject;
+}
+
+textarea {
+    grid-area: msg;
+    resize: none;
+}
+
+button {
+    grid-area: btn;
+    background-color: var(--black);
+    color: #fff;
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
