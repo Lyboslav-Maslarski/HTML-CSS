@@ -5,7 +5,7 @@ body {
 }
 
 .viewport {
-    height: 340px;
+    height: 50vh;
     position: relative;
     background-image: linear-gradient(to right,
             #1b639d,
@@ -33,7 +33,7 @@ body {
 }
 
 img {
-    width: 200px;
+    width: 280px;
     border-radius: 3px;    
 }
 
